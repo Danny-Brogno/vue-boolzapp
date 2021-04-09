@@ -71,16 +71,30 @@ main {
 .upperLeft {
   height: 33%;
   width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  border: 1px solid grey;
+}
+
+.upperLeft img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  position: relative;
+  right: 190px;
+}
+
+.upperLeft i {
+  padding: 0px 10px;
+  color: grey;
 }
 
 #upLeft1 {
-  /* debug */
-  background-color: red;
+  background-color: #e9ebea;
 }
 
 #upLeft2 {
-  /* debug */
-  background-color: green;
+  background-color: #8bd6fd;
 }
 
 #upLeft3 {

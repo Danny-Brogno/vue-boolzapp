@@ -14,14 +14,16 @@ function vueFunction() {
 
     el: "#dannyVue",
     data: {
-
+      "url": "img/myProfileImg.png"
     }, // END OF DATA
 
     methods: {
 
-    }; // END OF METHODS
+    } // END OF METHODS
 
-}); // END OF FUNCTION vueFunction
+  }); // END OF FUNCTION vueFunction
+
+} // END OF vueFunction
 
 // -----------------------------------------------------------------------------
 
