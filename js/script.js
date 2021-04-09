@@ -56,7 +56,7 @@ function vueFunction() {
                 },
                 {
                     date: '20/03/2020 16:35:00',
-                    text: "Ho già comprato due biglietti per l'Egitto"
+                    text: "Ho già comprato due biglietti per l'Egitto",
                     status: 'sent'
                 }
             ],
