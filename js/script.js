@@ -19,7 +19,7 @@ function vueFunction() {
       contacts: [
         {
             name: 'Giulio',
-            avatar: '_1',
+            avatar: 'img/giulio.jpg',
             visible: true,
             messages: [
                 {
@@ -41,7 +41,7 @@ function vueFunction() {
         },
         {
             name: 'Marco',
-            avatar: '_2',
+            avatar: 'img/marco.jpg',
             visible: true,
             messages: [
                 {
@@ -63,7 +63,7 @@ function vueFunction() {
         },
         {
             name: 'Ottaviano',
-            avatar: '_3',
+            avatar: 'img/ottaviano.jpg',
             visible: true,
             messages: [
                 {
@@ -85,7 +85,7 @@ function vueFunction() {
         },
         {
             name: 'Lucrezia',
-            avatar: '_4',
+            avatar: 'img/lucrezia.jpg',
             visible: true,
             messages: [
                 {
@@ -96,6 +96,67 @@ function vueFunction() {
                 {
                     date: '10/01/2020 15:50:00',
                     text: 'Io non ho sale per fare un uovo fritto e tu ti fai il bagno nel latte?',
+                    status: 'received'
+                }
+            ],
+        },
+        {
+          name: 'Agrippina',
+          avatar: 'img/agrippina.jpg',
+          visible: true,
+          messages: [
+              {
+                  date: '11/11/2020 17:22:55',
+                  text: 'AVE. Non è che puoi portarmi un capretto bianco? Vorrei fare un sacrificio di sangue a Giove Capitolino',
+                  status: 'sent'
+              },
+              {
+                  date: '11/11/2020 17:23:00',
+                  text: 'Non è la cosa più strana che ho sentito oggi',
+                  status: 'received'
+              }
+          ],
+        },
+        {
+            name: 'Gaio',
+            avatar: 'img/gaio.jpg',
+            visible: true,
+            messages: [
+                {
+                    date: '04/09/2020 10:10:40',
+                    text: "Salve mia Venere",
+                    status: 'received'
+                },
+                {
+                    date: '04/09/2020 10:11:10',
+                    text: 'Gaio... Ti ho già detto che sono etero',
+                    status: 'sent'
+                },
+                {
+                    date: '04/09/2020 10:12:22',
+                    text: 'Mai una gioia',
+                    status: 'received'
+                }
+            ],
+        },
+        {
+            name: 'Cicerone',
+            avatar: 'img/cicerone.jpg',
+            visible: true,
+            messages: [
+                {
+                    date: '07/08/2020 20:20:40',
+                    text: "Stai pur certo che non sei tu ad essere mortale, ma solo il tuo corpo. Perché ciò che la tua forma esterna rivela agli uomini non è te stesso; lo spirito è la vera essenza di se stessi, non la figura fisica che può essere indicata col tuo dito.",
+                    status: 'received'
+                },
+                {
+                    date: '07/08/2020 20:21:10',
+                    text: '???',
+                    status: 'sent'
+                },
+                {
+                    date: '07/08/2020 20:22:22',
+                    text: 'Sei un barbaro ingorante',
                     status: 'received'
                 }
             ],

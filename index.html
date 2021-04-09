@@ -70,17 +70,24 @@
 
             </div>
 
-            <!-- TWO -->
+            <!-- THREE -->
             <div id="upLeft3" class="upperLeft flex">
+              <!-- v-model -->
               <input type="text" id="" placeholder="&#128269; Look for a chat">
             </div>
-
           </div>
+
+          <!--THIS IS THE CONTACT LIST SECTION -->
 
           <div class="lowerSectionLeft flex">
             <ul>
-              <li v-for="pippo in 100">
-                {{ pippo }}
+              <!-- <img :src="avatar"> -->
+
+              <li v-for="profile in contacts">
+                {{ profile["name"] }}
+                <!-- <p v for="message in contacts">
+                  {{ message["messages"][0] }} -->
+                </p>
               </li>
             </ul>
           </div>
