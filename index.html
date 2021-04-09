@@ -81,12 +81,12 @@
 
           <div class="lowerSectionLeft flex">
             <ul>
-              <!-- <img :src="avatar"> -->
+              <!-- <img v-for="avatar in contacts" :src="avatar"> {{ avatar }} -->
 
               <li v-for="profile in contacts">
                 {{ profile["name"] }}
-                <!-- <p v for="message in contacts">
-                  {{ message["messages"][0] }} -->
+                <!-- <p v-for="message in contacts">
+                  {{ message["messages"][1]["text"]}} -->
                 </p>
               </li>
             </ul>
