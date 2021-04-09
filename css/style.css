@@ -62,7 +62,7 @@ main {
 }
 
 /* -------------------INSIDE THE LEFT SQUARE--------------------------------- */
-
+/* (1) */
 .upperSectionLeft {
   height: 30%;
   width: 100%;
@@ -93,11 +93,42 @@ main {
   background-color: #e9ebea;
 }
 
+/* (2) */
+#upLeft2 i {
+  background-color: white;
+  padding: 15px 15px;
+  border-radius: 100%;
+  position: relative;
+  right: 83px;
+}
+
+#upLeft2:nth-child(2) h4 {
+  font-weight: bold;
+  position: relative;
+  right: 40px;
+}
+
+#upLeft2:nth-child(2) p {
+  color: grey;
+  text-decoration: underline;
+  position: relative;
+  right: 40px;
+}
+
 #upLeft2 {
   background-color: #8bd6fd;
 }
 
+/* (3) */
 #upLeft3 {
-  /* debug */
-  background-color: yellow;
+  background-color: #e9ebea;
+  justify-content: center;
+}
+
+#upLeft3 input {
+  align-self: center;
+  width: 85%;
+  height: 35%;
+  color: grey;
+  border-radius: 5px;
 }
