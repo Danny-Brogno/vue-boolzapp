@@ -19,9 +19,9 @@ function vueFunction() {
 
     methods: {
 
-    }); // END OF METHODS
+    }; // END OF METHODS
 
-} // END OF FUNCTION vueFunction
+}); // END OF FUNCTION vueFunction
 
 // -----------------------------------------------------------------------------
 

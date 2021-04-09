@@ -17,14 +17,8 @@ li {
 }
 
 /* ------------------CLASSES TO BE USED MULTIPLE TIMES----------------------- */
-
-.padTop {
-  padding-top: 20px;
-}
-
-.container-flex {
+.flex {
   display: flex;
-  justify-content: center;
 }
 
 /* -------------------------------HEADER------------------------------------- */
@@ -39,4 +33,57 @@ header {
 main {
   height: 90vh;
   background-color: #d5d6cc;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.biggerSquareContainer {
+  height: 100%;
+  width: 60%;
+  position: absolute;
+  bottom: 60px;
+}
+
+.squareLeft {
+  height: 100%;
+  width: 30%;
+  /* overflow: hidden; */
+  /* overflow-y: auto; */
+  /* debug */
+  background-color: royalblue;
+}
+
+.squareRight {
+  height: 100%;
+  width: 70%;
+  /* debug */
+  background-color: navy;
+}
+
+/* -------------------INSIDE THE LEFT SQUARE--------------------------------- */
+
+.upperSectionLeft {
+  height: 30%;
+  width: 100%;
+}
+
+.upperLeft {
+  height: 33%;
+  width: 100%;
+}
+
+#upLeft1 {
+  /* debug */
+  background-color: red;
+}
+
+#upLeft2 {
+  /* debug */
+  background-color: green;
+}
+
+#upLeft3 {
+  /* debug */
+  background-color: yellow;
 }
