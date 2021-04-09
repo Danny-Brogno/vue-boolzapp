@@ -14,7 +14,8 @@ function vueFunction() {
 
     el: "#dannyVue",
     data: {
-      "url": "img/myProfileImg.png",
+      "url": "img/legionario.png",
+      "defaultImg": "img/default-background.png",
 
       contacts: [
         {
@@ -24,17 +25,17 @@ function vueFunction() {
             messages: [
                 {
                     date: '10/01/2020 15:30:55',
-                    text: 'Hai visto i miei 23 coltelli?',
-                    status: 'sent'
+                    text: 'Ho comprato un coltello nuovo a Bruto',
+                    status: 'received'
                 },
                 {
                     date: '10/01/2020 15:50:00',
-                    text: 'Credo che Bruto li abbia presi',
+                    text: 'Non mi pare una buoan idea',
                     status: 'sent'
                 },
                 {
                     date: '10/01/2020 16:15:22',
-                    text: 'Allora sto tranquillo',
+                    text: 'Vai tranquillo, lui non mi tradirebbe mai',
                     status: 'received'
                 }
             ],
@@ -46,18 +47,18 @@ function vueFunction() {
             messages: [
                 {
                     date: '20/03/2020 16:30:00',
-                    text: 'Ciao! Hai visto che Cleopatra ha fatto un uovo video su TicToc?',
-                    status: 'sent'
+                    text: 'Cleopatra ha fatto un nuovo video su TicToc?',
+                    status: 'received'
                 },
                 {
                     date: '20/03/2020 16:30:55',
                     text: 'Antò, non fare scemenze',
-                    status: 'received'
+                    status: 'sent'
                 },
                 {
                     date: '20/03/2020 16:35:00',
                     text: "Ho già comprato due biglietti per l'Egitto",
-                    status: 'sent'
+                    status: 'received'
                 }
             ],
         },
@@ -68,17 +69,17 @@ function vueFunction() {
             messages: [
                 {
                     date: '28/03/2020 10:10:40',
-                    text: "Quand'è che vieni a Roma?",
+                    text: "Tutte le strade portano a Roma",
                     status: 'received'
                 },
                 {
                     date: '28/03/2020 10:20:10',
-                    text: 'Non conosco molto bene la strada',
+                    text: "Anche dall'America",
                     status: 'sent'
                 },
                 {
                     date: '28/03/2020 16:15:22',
-                    text: 'Tranquillo, tanto tutte le strade portano a Roma',
+                    text: 'Dammi un po di tempo. Porterò le legioni anche li',
                     status: 'received'
                 }
             ],
@@ -90,13 +91,13 @@ function vueFunction() {
             messages: [
                 {
                     date: '10/01/2020 15:30:55',
-                    text: 'Ciao! Indovina? Mi sto facendo il bagno nel latte',
-                    status: 'sent'
+                    text: 'Indovina? Mi sto facendo il bagno nel latte',
+                    status: 'received'
                 },
                 {
                     date: '10/01/2020 15:50:00',
                     text: 'Io non ho sale per fare un uovo fritto e tu ti fai il bagno nel latte?',
-                    status: 'received'
+                    status: 'sent'
                 }
             ],
         },
@@ -107,13 +108,13 @@ function vueFunction() {
           messages: [
               {
                   date: '11/11/2020 17:22:55',
-                  text: 'AVE. Non è che puoi portarmi un capretto bianco? Vorrei fare un sacrificio di sangue a Giove Capitolino',
-                  status: 'sent'
+                  text: 'Ti ho prearato un piatto di funghi',
+                  status: 'received'
               },
               {
                   date: '11/11/2020 17:23:00',
                   text: 'Non è la cosa più strana che ho sentito oggi',
-                  status: 'received'
+                  status: 'sent'
               }
           ],
         },
@@ -124,7 +125,7 @@ function vueFunction() {
             messages: [
                 {
                     date: '04/09/2020 10:10:40',
-                    text: "Salve mia Venere",
+                    text: "Vieni anche tu al ROMAN-GAY-PRIDE?",
                     status: 'received'
                 },
                 {
@@ -146,7 +147,7 @@ function vueFunction() {
             messages: [
                 {
                     date: '07/08/2020 20:20:40',
-                    text: "Stai pur certo che non sei tu ad essere mortale, ma solo il tuo corpo. Perché ciò che la tua forma esterna rivela agli uomini non è te stesso; lo spirito è la vera essenza di se stessi, non la figura fisica che può essere indicata col tuo dito.",
+                    text: "Anvedi stò burino",
                     status: 'received'
                 },
                 {
@@ -156,7 +157,51 @@ function vueFunction() {
                 },
                 {
                     date: '07/08/2020 20:22:22',
-                    text: 'Sei un barbaro ingorante',
+                    text: 'Feste festini UAU UAU!!!!',
+                    status: 'received'
+                }
+            ],
+        },
+        {
+            name: 'Spartacus',
+            avatar: 'img/spartacus.jpg',
+            visible: true,
+            messages: [
+                {
+                    date: '05/06/2020 23:57:40',
+                    text: "Mi sento trattato come uno schiavo",
+                    status: 'received'
+                },
+                {
+                    date: '05/06/2020 23:58:10',
+                    text: 'Forse perchè lo sei',
+                    status: 'sent'
+                },
+                {
+                    date: '05/06/2020 23:59:22',
+                    text: 'Un giorno sarò libero',
+                    status: 'received'
+                }
+            ],
+        },
+        {
+            name: 'Annibale',
+            avatar: 'img/annibale.jpg',
+            visible: true,
+            messages: [
+                {
+                    date: '23/04/2020 12:44:40',
+                    text: "Mi serve un po di sale",
+                    status: 'received'
+                },
+                {
+                    date: '23/04/2020 12:45:10',
+                    text: 'Basta che vai a Cartagine',
+                    status: 'sent'
+                },
+                {
+                    date: '23/04/2020 12:56:22',
+                    text: 'touchè',
                     status: 'received'
                 }
             ],

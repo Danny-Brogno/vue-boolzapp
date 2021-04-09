@@ -17,8 +17,14 @@ li {
 }
 
 /* ------------------CLASSES TO BE USED MULTIPLE TIMES----------------------- */
+
 .flex {
   display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 /* -------------------------------HEADER------------------------------------- */
@@ -48,7 +54,7 @@ main {
 .squareLeft {
   height: 100%;
   width: 30%;
-  overflow-y: hidden;
+  overflow: hidden;
   background-color: white;
 }
 
@@ -62,8 +68,7 @@ main {
 /* -------------------INSIDE THE LEFT SQUARE--------------------------------- */
 /* (1) */
 .upperSectionLeft {
-  height: 30%;
-  width: 100%;
+  height: 300px;
 }
 
 .upperLeft {
@@ -75,11 +80,11 @@ main {
 }
 
 .upperLeft img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 100%;
   position: relative;
-  right: 190px;
+  right: 170px;
 }
 
 .upperLeft i {
@@ -136,9 +141,9 @@ main {
 /* ---------------------------LOWER LEFT SECTION----------------------------- */
 
 .lowerSectionLeft {
-  height: 100%;
+  height: calc(100% - 300px);
   width: 100%;
-  overflow-x: scroll;
+  overflow: scroll;
 }
 
 .lowerSectionLeft ul {
@@ -149,4 +154,53 @@ main {
   width: 100%;
   height: 15%;
   border: 1px solid grey;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.contactSection li img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-left: 5px;
+}
+
+.each-li {
+  position: relative;
+}
+
+.each-li span:first-of-type {
+  position: absolute;
+  top: 10px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.each-li span:last-of-type {
+  position: absolute;
+  top: 30px;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+/* --------------------------------RIGHT SECTION----------------------------- */
+
+.squareRight .upRight,
+.foot {
+  height: 100px;
+  background-color: #e9ebea;
+  border: 1px solid grey;
+}
+
+.middleSection {
+  height: calc(100% - 200px);
+  background-image: url(../img/backgound.png);
+  display:flex;
+  justify-content: center;
+}
+
+.middleSection img {
+  width: 60%;
+  height: 60%;
+  align-self: center;
 }

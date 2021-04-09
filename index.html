@@ -73,38 +73,68 @@
             <!-- THREE -->
             <div id="upLeft3" class="upperLeft flex">
               <!-- v-model -->
-              <input type="text" id="" placeholder="&#128269; Look for a chat">
+              <input type="text" id="" placeholder=" &#128269; Look for a chat">
             </div>
           </div>
 
           <!--THIS IS THE CONTACT LIST SECTION -->
 
           <div class="lowerSectionLeft flex">
-            <ul>
-              <!-- <img v-for="avatar in contacts" :src="avatar"> {{ avatar }} -->
+            <ul class="contactSection flex-column">
 
-              <li v-for="profile in contacts">
-                {{ profile["name"] }}
-                <!-- <p v-for="message in contacts">
-                  {{ message["messages"][1]["text"]}} -->
+              <li v-for="contact in contacts" class="each-li">
+                <img :src="contact.avatar">
+                <span>{{ contact.name }}</span>
+                <span>{{ contact.messages[0].text }}</span>
                 </p>
               </li>
             </ul>
           </div>
 
-        </div>
+        </div><!-- END OF LEFT SIDE -->
 
         <!--____ END OF SECTION, MOVING ONTO THE RIGHT SIDE___ -->
 
         <!-- THIS IS RIGHT SIDE -->
         <div class="squareRight">
 
-        </div>
+          <!-- TOP -->
+          <div class="upRight">
+          </div>
 
-      </div>
+          <!-- CENTER -->
+          <div class="middleSection">
+            <img :src="defaultImg">
+          </div>
+
+          <!-- BOTTOM -->
+          <div class="foot flex">
+
+            <div>
+              <a href="#">
+                <i class="far fa-smile"></i>
+              </a>
+            </div>
+
+            <div>
+              <a href="#">
+                <i class="fas fa-paperclip"></i>
+              </a>
+            </div>
+
+            <div>
+              <a href="#">
+                <i class="fas fa-microphone"></i>
+              </a>
+            </div>
+          </div><!-- END OF BOTTOM -->
+
+        </div><!-- END OF RIGHT SIDE -->
+
+      </div> <!-- END OF biggerSquareContainer -->
     </main>
 
-  </section>
+  </section> <!-- END OF VUE CONTAINER -->
 
   </body>
 </html>
