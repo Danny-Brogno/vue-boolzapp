@@ -7,6 +7,8 @@
     <link rel="icon" sizes="16x16" href="img/favicon.jpg">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
     <!-- J QUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- VUE -->
@@ -98,11 +100,11 @@
         <!-- THIS IS RIGHT SIDE -->
         <div class="squareRight">
 
-          <!-- TOP -->
+          <!-- TOP ( THIS WILL CONTAIN THE CONTACT'S DETAILS ONCE WE PRESS THE CHAT ON THE LEFT) -->
           <div class="upRight">
           </div>
 
-          <!-- CENTER -->
+          <!-- CENTER ( THIS WILL CONTAIN THE DEFAULT IMG THAT DISAPPEARS ONCE WE PRESS THE CHAT ON THE LEFT)-->
           <div class="middleSection">
             <img :src="defaultImg">
           </div>
@@ -124,12 +126,14 @@
 
             <div>
               <a href="#">
+                <input type="text">
                 <i class="fas fa-microphone"></i>
               </a>
             </div>
-          </div><!-- END OF BOTTOM -->
+            
+          </div><!-- END OF FOOT -->
 
-        </div><!-- END OF RIGHT SIDE -->
+        </div><!-- END OF SQUARE RIGHT -->
 
       </div> <!-- END OF biggerSquareContainer -->
     </main>

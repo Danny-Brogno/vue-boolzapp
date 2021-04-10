@@ -19,7 +19,7 @@ function vueFunction() {
 
       contacts: [
         {
-            name: 'Giulio',
+            name: 'Giulio Cesare',
             avatar: 'img/giulio.jpg',
             visible: true,
             messages: [
@@ -41,7 +41,7 @@ function vueFunction() {
             ],
         },
         {
-            name: 'Marco',
+            name: 'Marco Antonio',
             avatar: 'img/marco.jpg',
             visible: true,
             messages: [
@@ -63,7 +63,7 @@ function vueFunction() {
             ],
         },
         {
-            name: 'Ottaviano',
+            name: 'Ottaviano Augusto',
             avatar: 'img/ottaviano.jpg',
             visible: true,
             messages: [
@@ -85,7 +85,7 @@ function vueFunction() {
             ],
         },
         {
-            name: 'Lucrezia',
+            name: 'Lucrezia Valeria',
             avatar: 'img/lucrezia.jpg',
             visible: true,
             messages: [
@@ -102,7 +102,7 @@ function vueFunction() {
             ],
         },
         {
-          name: 'Agrippina',
+          name: 'Agrippina Minore',
           avatar: 'img/agrippina.jpg',
           visible: true,
           messages: [
@@ -119,7 +119,7 @@ function vueFunction() {
           ],
         },
         {
-            name: 'Gaio',
+            name: 'Gaio Druso',
             avatar: 'img/gaio.jpg',
             visible: true,
             messages: [
@@ -141,7 +141,7 @@ function vueFunction() {
             ],
         },
         {
-            name: 'Cicerone',
+            name: 'Tullio Cicerone',
             avatar: 'img/cicerone.jpg',
             visible: true,
             messages: [
@@ -163,7 +163,7 @@ function vueFunction() {
             ],
         },
         {
-            name: 'Spartacus',
+            name: 'Spartaco',
             avatar: 'img/spartacus.jpg',
             visible: true,
             messages: [
@@ -185,7 +185,7 @@ function vueFunction() {
             ],
         },
         {
-            name: 'Annibale',
+            name: 'Annibale Barca',
             avatar: 'img/annibale.jpg',
             visible: true,
             messages: [
@@ -202,6 +202,72 @@ function vueFunction() {
                 {
                     date: '23/04/2020 12:56:22',
                     text: 'touchè',
+                    status: 'received'
+                }
+            ],
+        },
+        {
+            name: 'Caio Mario',
+            avatar: 'img/mario.jpg',
+            visible: true,
+            messages: [
+                {
+                    date: '23/04/2020 12:44:40',
+                    text: "Hai visto mio fratello Luigi?",
+                    status: 'received'
+                },
+                {
+                    date: '23/04/2020 12:45:10',
+                    text: 'Non capisco la battuta',
+                    status: 'sent'
+                },
+                {
+                    date: '23/04/2020 12:56:22',
+                    text: 'Sei antico',
+                    status: 'received'
+                }
+            ],
+        },
+        {
+            name: 'Cleopatra Filopater',
+            avatar: 'img/cleopatra.jpg',
+            visible: true,
+            messages: [
+                {
+                    date: '23/04/2020 12:44:40',
+                    text: "Fa troppo caldo. Me ne vado in Norvegia",
+                    status: 'received'
+                },
+                {
+                    date: '23/04/2020 12:45:10',
+                    text: 'Quanto ci vuole col battello?',
+                    status: 'sent'
+                },
+                {
+                    date: '23/04/2020 12:56:22',
+                    text: 'Un paio di mesi',
+                    status: 'received'
+                }
+            ],
+        },
+        {
+            name: 'Vipsanio Agrippa',
+            avatar: 'img/agrippa.png',
+            visible: true,
+            messages: [
+                {
+                    date: '23/04/2020 12:44:40',
+                    text: "Non so cosa dire",
+                    status: 'received'
+                },
+                {
+                    date: '23/04/2020 12:45:10',
+                    text: 'Potevi non scrivere affatto',
+                    status: 'sent'
+                },
+                {
+                    date: '23/04/2020 12:56:22',
+                    text: 'Ma anche no',
                     status: 'received'
                 }
             ],

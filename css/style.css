@@ -16,6 +16,9 @@ li {
   list-style: none;
 }
 
+body {
+  font-family: 'Spectral SC', serif;
+}
 /* ------------------CLASSES TO BE USED MULTIPLE TIMES----------------------- */
 
 .flex {
@@ -46,9 +49,10 @@ main {
 
 .biggerSquareContainer {
   height: 100%;
-  width: 60%;
+  width: 70%;
   position: absolute;
   bottom: 60px;
+  box-shadow: 20px 20px 50px 15px grey;
 }
 
 .squareLeft {
@@ -76,7 +80,8 @@ main {
   width: 100%;
   align-items: center;
   justify-content: flex-end;
-  border: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
 }
 
 .upperLeft img {
@@ -84,7 +89,7 @@ main {
   height: 4rem;
   border-radius: 100%;
   position: relative;
-  right: 170px;
+  right: 225px;
 }
 
 .upperLeft i {
@@ -103,20 +108,20 @@ main {
   padding: 15px 15px;
   border-radius: 100%;
   position: relative;
-  right: 83px;
+  right: 85px;
 }
 
 #upLeft2:nth-child(2) h4 {
   font-weight: bold;
   position: relative;
-  right: 40px;
+  right: 50px;
 }
 
 #upLeft2:nth-child(2) p {
   color: grey;
   text-decoration: underline;
   position: relative;
-  right: 40px;
+  right: 50px;
 }
 
 #upLeft2 {
@@ -143,7 +148,7 @@ main {
 .lowerSectionLeft {
   height: calc(100% - 300px);
   width: 100%;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .lowerSectionLeft ul {
@@ -159,10 +164,10 @@ main {
 }
 
 .contactSection li img {
-  width: 60px;
-  height: 60px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 100%;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .each-li {
@@ -179,17 +184,18 @@ main {
 .each-li span:last-of-type {
   position: absolute;
   top: 30px;
-  font-size: 14px;
+  font-size: 13px;
   margin-left: 5px;
 }
 
-/* --------------------------------RIGHT SECTION----------------------------- */
+/* ----------------------------TOP RIGHT SECTION----------------------------- */
 
+/* (ONLY THIS HAS "FOOT" FROM THE BOTTOM RIGHT SECTION) */
 .squareRight .upRight,
 .foot {
   height: 100px;
   background-color: #e9ebea;
-  border: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 .middleSection {
@@ -200,7 +206,33 @@ main {
 }
 
 .middleSection img {
-  width: 60%;
-  height: 60%;
+  width: 20rem;
+  height: 20rem;
   align-self: center;
+}
+
+/* ------------------------BOTTOM RIGHT SECTION------------------------------ */
+
+.foot {
+  justify-content: center;
+  align-items: center;
+}
+
+.foot div:nth-child(3) i {
+  font-size: 20px;
+  margin-left: 20px;
+  color: grey;
+}
+
+.foot div:nth-child(3) input {
+  width: 700px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.foot div:nth-child(1) i,
+.foot div:nth-child(2) i {
+  color: grey;
+  margin-right: 20px;
+  font-size: 20px;
 }
