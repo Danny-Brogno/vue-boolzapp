@@ -16,10 +16,9 @@ function vueFunction() {
     data: {
       "url": "img/legionario.png",
       "defaultImg": "img/default-background.png",
-
       contacts: [
         {
-            name: 'Giulio Cesare',
+            name: 'Cesare',
             avatar: 'img/giulio.jpg',
             visible: true,
             messages: [
@@ -47,7 +46,7 @@ function vueFunction() {
             messages: [
                 {
                     date: '20/03/2020 16:30:00',
-                    text: 'Cleopatra ha fatto un nuovo video su TicToc?',
+                    text: 'Cleopatra ha fatto un nuovo video su TicToc!',
                     status: 'received'
                 },
                 {
@@ -63,7 +62,7 @@ function vueFunction() {
             ],
         },
         {
-            name: 'Ottaviano Augusto',
+            name: 'Ottaviano',
             avatar: 'img/ottaviano.jpg',
             visible: true,
             messages: [
@@ -85,7 +84,7 @@ function vueFunction() {
             ],
         },
         {
-            name: 'Lucrezia Valeria',
+            name: 'Lucrezia',
             avatar: 'img/lucrezia.jpg',
             visible: true,
             messages: [
@@ -102,7 +101,7 @@ function vueFunction() {
             ],
         },
         {
-          name: 'Agrippina Minore',
+          name: 'Agrippina',
           avatar: 'img/agrippina.jpg',
           visible: true,
           messages: [
@@ -119,7 +118,7 @@ function vueFunction() {
           ],
         },
         {
-            name: 'Gaio Druso',
+            name: 'Gaio',
             avatar: 'img/gaio.jpg',
             visible: true,
             messages: [
@@ -141,7 +140,7 @@ function vueFunction() {
             ],
         },
         {
-            name: 'Tullio Cicerone',
+            name: 'Cicerone',
             avatar: 'img/cicerone.jpg',
             visible: true,
             messages: [
@@ -185,7 +184,7 @@ function vueFunction() {
             ],
         },
         {
-            name: 'Annibale Barca',
+            name: 'Annibale',
             avatar: 'img/annibale.jpg',
             visible: true,
             messages: [
@@ -207,7 +206,7 @@ function vueFunction() {
             ],
         },
         {
-            name: 'Caio Mario',
+            name: 'Mario',
             avatar: 'img/mario.jpg',
             visible: true,
             messages: [
@@ -229,7 +228,7 @@ function vueFunction() {
             ],
         },
         {
-            name: 'Cleopatra Filopater',
+            name: 'Cleopatra VII',
             avatar: 'img/cleopatra.jpg',
             visible: true,
             messages: [
@@ -251,7 +250,7 @@ function vueFunction() {
             ],
         },
         {
-            name: 'Vipsanio Agrippa',
+            name: 'Agrippa',
             avatar: 'img/agrippa.png',
             visible: true,
             messages: [
@@ -271,11 +270,16 @@ function vueFunction() {
                     status: 'received'
                 }
             ],
-        },
+        }
     ]
     }, // END OF DATA
 
+
     methods: {
+
+      movingContact: function () {
+        console.log("LALLERO")
+      }
 
     } // END OF METHODS
 
