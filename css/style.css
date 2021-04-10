@@ -213,18 +213,19 @@ main {
 .middleSection {
   height: calc(100% - 200px);
   background-image: url(../img/backgound.png);
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  overflow: auto;
 }
 
-.middleSection div:first-of-type img {
+.disappearingImage {
+  justify-content: center;
+}
+
+.disappearingImage img{
   width: 20rem;
   height: 20rem;
-  align-self: right;
 }
 
-.lol {
+.width80 {
   width: 80%;
   margin: 0 auto;
 }
@@ -234,14 +235,23 @@ main {
   flex-direction: column;
 }
 
+#bubbleText span {
+  max-width: 50%;
+  margin: 10px 0px 0px 0px;
+}
+
 #bubbleText span:first-of-type {
   background-color: white;
   align-self: flex-start;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
 #bubbleText span:last-of-type {
   background-color: #dbfac6;
   align-self: flex-end;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
 /* ------------------------BOTTOM RIGHT SECTION------------------------------ */

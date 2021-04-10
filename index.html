@@ -115,11 +115,12 @@
           <!-- CENTER ( THIS WILL CONTAIN THE DEFAULT IMG THAT DISAPPEARS ONCE WE PRESS THE CHAT ON THE LEFT)-->
           <div class="middleSection">
 
-            <div>
+            <div class="disappearingImage flex">
               <img :src="defaultImg" v-if="showImage">
             </div>
 
-            <ul class="lol">
+
+            <ul class="width80">
 
               <li v-for="(elem, index) in currentMessages" id="bubbleText">
                 <span>{{ elem.text }}</span>
@@ -147,7 +148,7 @@
 
             <div>
               <a href="#">
-                <input  v-model="addTextIntoArray" type="text">
+                <input v-model="addTextIntoArray" @keyup.enter="sendMessage" type="text">
                 <i class="fas fa-microphone"></i>
                 <i @click="sendMessage" class="far fa-paper-plane"></i>
               </a>

@@ -30,12 +30,12 @@ function vueFunction() {
             messages: [
                 {
                     date: '10/01/2020 15:30:55',
-                    text: 'Ho comprato un coltello nuovo a Bruto',
+                    text: 'Ho comprato dei coltelli nuovi a Bruto',
                     status: 'received'
                 },
                 {
                     date: '10/01/2020 15:50:00',
-                    myText: 'Non mi pare una buoan idea',
+                    myText: 'Non mi pare una buona idea',
                     status: 'sent'
                 },
                 {
@@ -79,7 +79,7 @@ function vueFunction() {
                 },
                 {
                     date: '28/03/2020 10:20:10',
-                    myText: "Anche dall'America",
+                    myText: "Anche dall'America?",
                     status: 'sent'
                 },
                 {
@@ -103,7 +103,134 @@ function vueFunction() {
                     date: '10/01/2020 15:50:00',
                     myText: 'Io non ho sale per fare un uovo fritto e tu ti fai il bagno nel latte?',
                     status: 'sent'
-                }
+                },
+                {
+                    date: '10/01/2020 15:51:00',
+                    text: 'Non è colpa mia se tu sei un poveraccio',
+                    status: 'received'
+                },
+                {
+                    date: '10/01/2020 15:52:00',
+                    myText: 'Ma taci che non hai mai lavorato un minuto in vita tua',
+                    status: 'sent'
+                },
+                {
+                    date: '10/01/2020 15:53:00',
+                    text: 'Io non ho bisogno di lavorare: sono una influencer',
+                    status: 'received'
+                },
+                {
+                    date: '10/01/2020 15:54:00',
+                    myText: 'A quale università hai studiato per dientare influencer?',
+                    status: 'sent'
+                },
+                {
+                    date: '10/01/2020 15:55:00',
+                    text: 'La laurea non serve a niente: non vedi quanti laureati stanno a spasso?',
+                    status: 'received'
+                },
+                {
+                    date: '10/01/2020 15:56:00',
+                    myText: 'Non puoi dire sul serio',
+                    status: 'sent'
+                },
+                {
+                    date: '10/01/2020 15:57:00',
+                    text: 'Perchè?',
+                    status: 'received'
+                },
+                {
+                    date: '10/01/2020 15:58:00',
+                    myText: "Ok, mettiamola così: quale talento è necessario per poter fare l'influencer?",
+                    status: 'sent'
+                },
+                {
+                    date: '10/01/2020 15:59:00',
+                    text: 'Bisogna avere un sacco di seguaci',
+                    status: 'received'
+                },
+                {
+                    date: '10/01/2020 16:00:00',
+                    myText: 'Appunto',
+                    status: 'sent'
+                },
+                {
+                    date: '10/01/2020 16:01:00',
+                    text: 'Vabbè, capirai... Tu fai il medico. Che talenti hai?',
+                    status: 'received'
+                },
+                {
+                    date: '10/01/2020 16:02:00',
+                    myText: 'In confronto a te? Nessuno XD',
+                    status: 'sent'
+                },
+                {
+                    date: '10/01/2020 16:03:00',
+                    text: 'Bravo, perchè non sarai mai utile come me.',
+                    status: 'received'
+                },
+                {
+                    date: '10/01/2020 16:04:00',
+                    myText: 'Hai ragione, in fin dei conti io salvo vite... Poca roba',
+                    status: 'sent'
+                },
+                {
+                    date: '10/01/2020 16:05:00',
+                    text: 'Anche io salvo vite. Una volta un signore di 80 anni mi ha ringraziato dicendomi "Lucrezia, le tue foto mi fanno sentire un sedicenne"',
+                    status: 'received'
+                },
+                {
+                    date: '10/01/2020 16:06:00',
+                    myText: "Meglio di Batman",
+                    status: 'sent'
+                },
+                {
+                    date: '10/01/2020 16:07:00',
+                    text: 'Chi è un politico? Non lo conosco',
+                    status: 'received'
+                },
+                {
+                    date: '10/01/2020 16:08:00',
+                    myText: 'No, è il nuovo Papa',
+                    status: 'sent'
+                },
+                {
+                    date: '10/01/2020 16:09:00',
+                    text: 'Io sono atea, non mi piace che qualcuno mi dica in cosa devo credere',
+                    status: 'received'
+                },
+                {
+                    date: '10/01/2020 16:10:00',
+                    myText: 'Vorrei poter pensare che tu abbia dei pensieri tuoi che non siano indotti da Instagram o Facebook',
+                    status: 'sent'
+                },
+                {
+                    date: '10/01/2020 16:11:00',
+                    text: 'In che senzo?',
+                    status: 'received'
+                },
+                {
+                    date: '10/01/2020 16:12:00',
+                    myText: 'Mettiamola così: se tu non fossi influencer quale altra professione faresti?',
+                    status: 'sent'
+                },
+                {
+                    date: '10/01/2020 16:13:00',
+                    text: 'Attrice',
+                    status: 'received'
+                },
+                {
+                    date: '10/01/2020 16:14:00',
+                    myText: 'Ma se non hai mai letto un libro',
+                    status: 'sent'
+                },
+                {
+                    date: '10/01/2020 16:15:00',
+                    text: "Eh ma sarei un'attrice mica una lettrice",
+                    status: 'received'
+                },
+
+
             ],
         },
         {
@@ -157,12 +284,12 @@ function vueFunction() {
                 },
                 {
                     date: '07/08/2020 20:21:10',
-                    myText: '???',
+                    myText: 'Non parlo romano',
                     status: 'sent'
                 },
                 {
                     date: '07/08/2020 20:22:22',
-                    text: 'Feste festini UAU UAU!!!!',
+                    text: "A' ragazzì, se tè piglio tè faccio dì l'ave Maria ar contrario più veloce de come o' dici ara diritta",
                     status: 'received'
                 }
             ],
@@ -184,7 +311,7 @@ function vueFunction() {
                 },
                 {
                     date: '05/06/2020 23:59:22',
-                    text: 'Un giorno sarò libero',
+                    text: 'A si? bhe tu sei brutto e stupido',
                     status: 'received'
                 }
             ],
@@ -228,7 +355,7 @@ function vueFunction() {
                 },
                 {
                     date: '23/04/2020 12:56:22',
-                    text: 'Sei antico',
+                    text: 'TU non capisci noi CIOVANI',
                     status: 'received'
                 }
             ],
@@ -297,7 +424,7 @@ function vueFunction() {
       sendMessage: function() {
 
         this.objUser = {
-          data:new Date(),
+          data: new Date(),
           myText: this.addTextIntoArray,
           status: "sent",
         }
@@ -306,7 +433,7 @@ function vueFunction() {
           this.currentMessages.push(this.objUser);
           this.addTextIntoArray = "";
         } else {
-          console.log("Scrivi qualcosa");
+          console.log("WRITE SOMETHING");
         }
       }
 
