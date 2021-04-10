@@ -65,8 +65,6 @@ main {
 .squareRight {
   height: 100%;
   width: 70%;
-  /* debug */
-  background-color: navy;
 }
 
 /* -------------------INSIDE THE LEFT SQUARE--------------------------------- */
@@ -195,20 +193,55 @@ main {
 .foot {
   height: 100px;
   background-color: #e9ebea;
-  border-bottom: 1px solid grey;
 }
+
+.upRight .selectedChatNameAndAvatar span {
+  position: relative;
+  bottom: 30px;
+  left: 5px;
+}
+
+.selectedChatNameAndAvatar img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  margin: 10px 0px 0px 10px;
+}
+
+/* --------------MIDDLE RIGHT SECTION (CHAT SECTION)------------------------- */
 
 .middleSection {
   height: calc(100% - 200px);
   background-image: url(../img/backgound.png);
   display:flex;
   justify-content: center;
+  align-items: center;
 }
 
-.middleSection img {
+.middleSection div:first-of-type img {
   width: 20rem;
   height: 20rem;
-  align-self: center;
+  align-self: right;
+}
+
+.lol {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#bubbleText {
+  display: flex;
+  flex-direction: column;
+}
+
+#bubbleText span:first-of-type {
+  background-color: white;
+  align-self: flex-start;
+}
+
+#bubbleText span:last-of-type {
+  background-color: #dbfac6;
+  align-self: flex-end;
 }
 
 /* ------------------------BOTTOM RIGHT SECTION------------------------------ */

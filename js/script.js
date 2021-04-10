@@ -14,8 +14,14 @@ function vueFunction() {
 
     el: "#dannyVue",
     data: {
+
       "url": "img/legionario.png",
       "defaultImg": "img/default-background.png",
+      "currentChat": "",
+      "showImage": true,
+      "currentMessages": "",
+      "addTextIntoArray": "",
+      objUser: {},
       contacts: [
         {
             name: 'Cesare',
@@ -29,7 +35,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 15:50:00',
-                    text: 'Non mi pare una buoan idea',
+                    myText: 'Non mi pare una buoan idea',
                     status: 'sent'
                 },
                 {
@@ -51,7 +57,7 @@ function vueFunction() {
                 },
                 {
                     date: '20/03/2020 16:30:55',
-                    text: 'Antò, non fare scemenze',
+                    myText: 'Antò, non fare scemenze',
                     status: 'sent'
                 },
                 {
@@ -73,7 +79,7 @@ function vueFunction() {
                 },
                 {
                     date: '28/03/2020 10:20:10',
-                    text: "Anche dall'America",
+                    myText: "Anche dall'America",
                     status: 'sent'
                 },
                 {
@@ -95,7 +101,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 15:50:00',
-                    text: 'Io non ho sale per fare un uovo fritto e tu ti fai il bagno nel latte?',
+                    myText: 'Io non ho sale per fare un uovo fritto e tu ti fai il bagno nel latte?',
                     status: 'sent'
                 }
             ],
@@ -112,7 +118,7 @@ function vueFunction() {
               },
               {
                   date: '11/11/2020 17:23:00',
-                  text: 'Non è la cosa più strana che ho sentito oggi',
+                  myText: 'Non è la cosa più strana che ho sentito oggi',
                   status: 'sent'
               }
           ],
@@ -129,7 +135,7 @@ function vueFunction() {
                 },
                 {
                     date: '04/09/2020 10:11:10',
-                    text: 'Gaio... Ti ho già detto che sono etero',
+                    myText: 'Gaio... Ti ho già detto che sono etero',
                     status: 'sent'
                 },
                 {
@@ -151,7 +157,7 @@ function vueFunction() {
                 },
                 {
                     date: '07/08/2020 20:21:10',
-                    text: '???',
+                    myText: '???',
                     status: 'sent'
                 },
                 {
@@ -173,7 +179,7 @@ function vueFunction() {
                 },
                 {
                     date: '05/06/2020 23:58:10',
-                    text: 'Forse perchè lo sei',
+                    myText: 'Forse perchè lo sei',
                     status: 'sent'
                 },
                 {
@@ -195,12 +201,12 @@ function vueFunction() {
                 },
                 {
                     date: '23/04/2020 12:45:10',
-                    text: 'Basta che vai a Cartagine',
+                    myText: 'Basta che vai a Cartagine',
                     status: 'sent'
                 },
                 {
                     date: '23/04/2020 12:56:22',
-                    text: 'touchè',
+                    text: 'Touchè',
                     status: 'received'
                 }
             ],
@@ -217,7 +223,7 @@ function vueFunction() {
                 },
                 {
                     date: '23/04/2020 12:45:10',
-                    text: 'Non capisco la battuta',
+                    myText: 'Non capisco la battuta',
                     status: 'sent'
                 },
                 {
@@ -239,7 +245,7 @@ function vueFunction() {
                 },
                 {
                     date: '23/04/2020 12:45:10',
-                    text: 'Quanto ci vuole col battello?',
+                    myText: 'Quanto ci vuole col battello?',
                     status: 'sent'
                 },
                 {
@@ -261,7 +267,7 @@ function vueFunction() {
                 },
                 {
                     date: '23/04/2020 12:45:10',
-                    text: 'Potevi non scrivere affatto',
+                    myText: 'Potevi non scrivere affatto',
                     status: 'sent'
                 },
                 {
@@ -277,8 +283,31 @@ function vueFunction() {
 
     methods: {
 
-      movingContact: function () {
-        console.log("LALLERO")
+      movingContact: function (elem, index) {
+        // MOVING CONTACT TOP RIGHT ON CLICK
+        this.currentChat = elem,
+        // MESSAGES APPEAR ON CLICK
+        this.currentMessages = elem.messages,
+        // HIDING DEFAULT IMAGE ON CLICK
+        this.showImage = !this.defaultImg
+        // ADDING TEXT FROM INPUT TO ARRAY (PRINTED IN PAGE)
+
+      },
+
+      sendMessage: function() {
+
+        this.objUser = {
+          data:new Date(),
+          myText: this.addTextIntoArray,
+          status: "sent",
+        }
+
+        if (this.addTextIntoArray.length > 0) {
+          this.currentMessages.push(this.objUser);
+          this.addTextIntoArray = "";
+        } else {
+          console.log("Scrivi qualcosa");
+        }
       }
 
     } // END OF METHODS

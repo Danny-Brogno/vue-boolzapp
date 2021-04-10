@@ -75,7 +75,8 @@
             <!-- THREE -->
             <div id="upLeft3" class="upperLeft flex">
               <!-- v-model -->
-              <input type="text" id="" placeholder=" &#128269; Look for a chat">
+              <input type="text" placeholder=" &#128269; Look for a chat">
+
             </div>
           </div>
 
@@ -84,10 +85,10 @@
           <div class="lowerSectionLeft flex">
             <ul class="contactSection flex-column">
 
-              <li v-on:click="movingContact()" v-for="contact in contacts" class="each-li">
-                <img :src="contact.avatar">
-                <span>{{ contact.name }}</span>
-                <span>{{ contact.messages[0].text }}</span>
+              <li v-on:click="movingContact(elem, index)" v-for="(elem, index) in contacts" class="each-li">
+                <img :src="elem.avatar">
+                <span>{{ elem.name }}</span>
+                <span>{{ elem.messages[0].text }}</span>
               </li>
             </ul>
           </div>
@@ -103,8 +104,9 @@
           <div class="upRight">
 
             <ul>
-              <li>
-                
+              <li class="selectedChatNameAndAvatar">
+                <img :src="currentChat.avatar">
+                <span>{{ currentChat.name }}</span>
               </li>
             </ul>
 
@@ -112,7 +114,20 @@
 
           <!-- CENTER ( THIS WILL CONTAIN THE DEFAULT IMG THAT DISAPPEARS ONCE WE PRESS THE CHAT ON THE LEFT)-->
           <div class="middleSection">
-            <img :src="defaultImg">
+
+            <div>
+              <img :src="defaultImg" v-if="showImage">
+            </div>
+
+            <ul class="lol">
+
+              <li v-for="(elem, index) in currentMessages" id="bubbleText">
+                <span>{{ elem.text }}</span>
+                <span>{{ elem.myText }}</span>
+              </li>
+
+            </ul>
+
           </div>
 
           <!-- BOTTOM -->
@@ -132,8 +147,9 @@
 
             <div>
               <a href="#">
-                <input type="text">
+                <input  v-model="addTextIntoArray" type="text">
                 <i class="fas fa-microphone"></i>
+                <i @click="sendMessage" class="far fa-paper-plane"></i>
               </a>
             </div>
 
