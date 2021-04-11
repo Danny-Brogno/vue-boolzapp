@@ -21,7 +21,9 @@ function vueFunction() {
       "showImage": true,
       "currentMessages": "",
       "addTextIntoArray": "",
+      defaultMessage:{},
       objUser: {},
+      "sortedArray": "",
       contacts: [
         {
             name: 'Cesare',
@@ -121,7 +123,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 15:54:00',
-                    myText: 'A quale università hai studiato per dientare influencer?',
+                    myText: 'A quale università hai studiato per diventare influencer?',
                     status: 'sent'
                 },
                 {
@@ -405,7 +407,7 @@ function vueFunction() {
             ],
         }
     ]
-    }, // END OF DATA
+  }, // END OF DATA-------------------------------------------------------------
 
 
     methods: {
@@ -419,7 +421,8 @@ function vueFunction() {
         this.showImage = !this.defaultImg
         // ADDING TEXT FROM INPUT TO ARRAY (PRINTED IN PAGE)
 
-      },
+      }, // END OF MOVING CONTACTS FUNCTION (IN METHODS)------------------------
+
 
       sendMessage: function() {
 
@@ -429,19 +432,57 @@ function vueFunction() {
           status: "sent",
         }
 
+        // IF USER TRIES TO SEND EVEN ONE SINGLE LETTER
         if (this.addTextIntoArray.length > 0) {
+
+          // THEN IT CAN GO INTO THE ARRAY (LINE 427 OF JS)
           this.currentMessages.push(this.objUser);
+          // AND WE HAVE A DEFALUT ANSWER THAT COMES AFTER 3 SECONDS
+
+          this.defaultMessage = setTimeout(() => {
+            // (THIS IS THE DEFAULT ANSWER)
+            this.defaultMessage = {
+              date: new Date(),
+              text: 'Va bene',
+              status: 'received'
+            }
+            this.currentMessages.push(this.defaultMessage); // (PUSHED INTO THE ARRAY)
+          }, 3000)
+
+          // THIS MAKES THE TEXT GO AWAY ONCE YOU "SEND" IT IN THE ARRAY
           this.addTextIntoArray = "";
+
+        // BUT IF USER TRIES TO SEND NO WORDS/LETTERS AT ALL, THEN:
         } else {
           console.log("WRITE SOMETHING");
         }
-      }
 
-    } // END OF METHODS
+      } // END OF sendMessage FUNCTION (IN METHODS)-----------------------------
 
-  }); // END OF FUNCTION vueFunction
+    }, // END OF METHODS--------------------------------------------------------
 
-} // END OF vueFunction
+    // computed: {
+    //
+	  //   sortedArray: function() {
+		//     let sortedContacts = this.contacts;
+    //
+		//     sortedContacts = sortedContacts.sort((a,b) => {
+		// 	    let fa = a.title.toLowerCase(), fb = b.title.toLowerCase();
+		// 	    if (fa < fb) {
+		// 		    return - 1;
+		// 	      } else if (fa > fb) {
+		// 		      return 1;
+		// 	      }
+		// 	      return 0;
+		//     })
+    //     console.log(sortedContacts);
+	  //   } // END OF sortedArray FUNCTION (IN COMPUTED)
+    //
+    // } // END OF COMPUTED--------------------------------------------------------
+
+  }); // END OF vueFunction
+
+} // END OF VUE
 
 // -----------------------------------------------------------------------------
 
