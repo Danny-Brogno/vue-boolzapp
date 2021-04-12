@@ -21,9 +21,9 @@ function vueFunction() {
       "showImage": true,
       "currentMessages": "",
       "addTextIntoArray": "",
+      "sortedArray": "",
       defaultMessage:{},
       objUser: {},
-      "sortedArray": "",
       contacts: [
         {
             name: 'Cesare',
@@ -242,13 +242,18 @@ function vueFunction() {
           messages: [
               {
                   date: '11/11/2020 17:22:55',
-                  text: 'Ti ho prearato un piatto di funghi',
+                  text: 'Sto facendo uan raccolta fondi per la mia nuova associazione "Potere alle donne romane", ogni membro deve versare la quota di dieci denari per la causa',
                   status: 'received'
               },
               {
                   date: '11/11/2020 17:23:00',
-                  myText: 'Non è la cosa più strana che ho sentito oggi',
+                  myText: 'Potere alle donne romane?',
                   status: 'sent'
+              },
+              {
+                  date: '11/11/2020 17:24:55',
+                  text: 'Sapevo tu fossi un maschilista patriarca che odia il genere femminile. Per te le donne servono solo per fare figli e pulire casa vero? Mi fai schifo',
+                  status: 'received'
               }
           ],
         },
@@ -417,7 +422,7 @@ function vueFunction() {
         this.currentChat = elem,
         // MESSAGES APPEAR ON CLICK
         this.currentMessages = elem.messages,
-        // HIDING DEFAULT IMAGE ON CLICK
+        // HIDING DEFAULT IMAGE (MIDDLE SECTION) ON CLICK
         this.showImage = !this.defaultImg
         // ADDING TEXT FROM INPUT TO ARRAY (PRINTED IN PAGE)
 
@@ -457,9 +462,9 @@ function vueFunction() {
           console.log("WRITE SOMETHING");
         }
 
-      } // END OF sendMessage FUNCTION (IN METHODS)-----------------------------
+      }, // END OF sendMessage FUNCTION (IN METHODS)-----------------------------
 
-    }, // END OF METHODS--------------------------------------------------------
+    } // END OF METHODS--------------------------------------------------------
 
     // computed: {
     //

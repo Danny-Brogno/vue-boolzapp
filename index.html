@@ -31,6 +31,8 @@
       <!-- THIS IS THE WHOLE SQUARE -->
       <div class="biggerSquareContainer flex">
 
+        <!-- ________________________LEFT___________________________________ -->
+
         <!-- THIS IS LEFT SIDE -->
         <div class="squareLeft">
 
@@ -86,7 +88,8 @@
               <li v-on:click="movingContact(elem, index)" v-for="(elem, index) in contacts" class="each-li">
                 <img :src="elem.avatar">
                 <span>{{ elem.name }}</span>
-                <span>{{ elem.messages[0].text }}</span>
+                <span>{{ elem.messages[elem.messages.length - 1].text}}</span>
+
               </li>
             </ul>
           </div>
@@ -94,6 +97,8 @@
         </div><!-- END OF LEFT SIDE -->
 
         <!--____ END OF SECTION, MOVING ONTO THE RIGHT SIDE___ -->
+
+        <!-- _______________________RIGHT___________________________________ -->
 
         <!-- THIS IS RIGHT SIDE -->
         <div class="squareRight">
