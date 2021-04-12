@@ -21,7 +21,6 @@ function vueFunction() {
       "showImage": true,
       "currentMessages": "",
       "addTextIntoArray": "",
-      // "cutText": "",
 
       defaultMessage:{},
       objUser: {},
@@ -449,9 +448,9 @@ function vueFunction() {
           this.defaultMessage = setTimeout(() => {
             // (THIS IS THE DEFAULT ANSWER)
             this.defaultMessage = {
-              date: new Date(),
-              text: "Va bene",
-              status: "received"
+              "date": new Date(),
+              "text": "Va bene",
+              "status": "received"
             }
             this.currentMessages.push(this.defaultMessage); // (PUSHED INTO THE ARRAY)
           }, 3000)
@@ -466,17 +465,53 @@ function vueFunction() {
 
       }, // END OF sendMessage FUNCTION (IN METHODS)-----------------------------
 
-      // cutText: function (text, length, suffix) {
-      //     if (text.length > length) {
-      //         return text.substring(0, length) + suffix;
-      //     } else {
-      //         return text;
+
+      // THIS FUNCTION IS TO NOT MAKE THE TEXT GO OUTSIDE OF THE "LI"
+      cutText: function (text, length, suffix) { // (check line 91 of HTML) I pass the name of thsi funtion inside th {{ }} and then I pass it the parameters: text, length (decide how long you want the string to be), and then the suffix "..."
+        if (text.length > length) {
+          return text.substring(0, length) + suffix;
+        } else {
+          return text; // but if the text is no longer than the length I decided then it gives back the length
+        }
+
+
+      }, // END OF cutText FUNCTION (IN METHODS)-----------------------------
+
+
+      // filteredContacts: function() {
+      //   let tempContact = this.contacts.name;
+      //
+      //   // Process search input
+      //   if (this.searchValue != '' && this.searchValue) {
+      //   tempContact = tempContact.filter((item) => {
+      //     return item.title.toUpperCase().includes(this.searchValue.toUpperCase())
+      //     })
+      //     this.tempContact = "";
+      //   } // 1
+      //
+      //   // Sorting alphabetically
+      //   this.contacts.name = tempContact.sort((a, b) => {
+      //     if (this.sortBy == "alphabetically") {
+      //       let fa = a.name.toLowerCase();
+      //       let fb = b.name.toLowerCase();
+      //
+      //       if (fa < fb) {
+      //         return - 1
+      //       }
+      //       if (fa > fb) {
+      //         return 1
+      //       }
+      //       return 0
       //     }
-      // };
+      //   }); // 2
+      //
+      // } // END OF filteredContacts FUNCTION (METHODS)
 
-    }, // END OF METHODS--------------------------------------------------------
 
-  }); // END OF vueFunction
+
+    } // END OF METHODS--------------------------------------------------------
+
+  }) // END OF vueFunction
 
 } // END OF VUE
 
