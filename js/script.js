@@ -21,7 +21,7 @@ function vueFunction() {
       "showImage": true,
       "currentMessages": "",
       "addTextIntoArray": "",
-
+      "searchContacts": "",
       defaultMessage:{},
       objUser: {},
       contacts: [
@@ -478,38 +478,18 @@ function vueFunction() {
       }, // END OF cutText FUNCTION (IN METHODS)-----------------------------
 
 
-      // filteredContacts: function() {
-      //   let tempContact = this.contacts.name;
-      //
-      //   // Process search input
-      //   if (this.searchValue != '' && this.searchValue) {
-      //   tempContact = tempContact.filter((item) => {
-      //     return item.title.toUpperCase().includes(this.searchValue.toUpperCase())
-      //     })
-      //     this.tempContact = "";
-      //   } // 1
-      //
-      //   // Sorting alphabetically
-      //   this.contacts.name = tempContact.sort((a, b) => {
-      //     if (this.sortBy == "alphabetically") {
-      //       let fa = a.name.toLowerCase();
-      //       let fb = b.name.toLowerCase();
-      //
-      //       if (fa < fb) {
-      //         return - 1
-      //       }
-      //       if (fa > fb) {
-      //         return 1
-      //       }
-      //       return 0
-      //     }
-      //   }); // 2
-      //
-      // } // END OF filteredContacts FUNCTION (METHODS)
+    }, // END OF METHODS--------------------------------------------------------
 
+    computed: {
+      filteredContacts: function() {
+        return this.contacts.filter((element) => {
+          if (element.name.toLowerCase().includes(this.searchContacts.toLowerCase())) {
+            return element;
+          }
+        });
+      }
 
-
-    } // END OF METHODS--------------------------------------------------------
+    } // END OF COMPUTED (RESTITUISCONO SEMPRE UN VALORE)
 
   }) // END OF vueFunction
 

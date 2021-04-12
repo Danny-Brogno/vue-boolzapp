@@ -252,15 +252,18 @@ main {
 #bubbleText span.received {
   background-color: white;
   align-self: flex-start;
-  font-size: 20px;
-  border-radius: 10px;
 }
 
 #bubbleText span.sent {
   background-color: #dbfac6;
   align-self: flex-end;
+}
+
+#bubbleText span.received,
+#bubbleText span.sent {
   font-size: 20px;
   border-radius: 10px;
+  word-break: break-word;
 }
 
 /* ------------------------BOTTOM RIGHT SECTION------------------------------ */

@@ -75,7 +75,7 @@
 
             <!-- THREE -->
             <div id="upLeft3" class="upperLeft flex">
-              <input type="text" placeholder=" &#128269; Look for a chat ">
+              <input v-model="searchContacts" type="text" placeholder=" &#128269; Look for a chat ">
             </div>
 
           </div>
@@ -85,7 +85,7 @@
           <div class="lowerSectionLeft flex">
             <ul class="contactSection flex-column">
 
-              <li v-on:click="movingContact(elem, index)" v-for="(elem, index) in contacts" class="each-li">
+              <li v-on:click="movingContact(elem, index)" v-for="(elem, index) in filteredContacts" class="each-li">
                 <img :src="elem.avatar">
                 <span>{{ elem.name }}</span>
                 <span>{{ cutText(elem.messages[elem.messages.length - 1].text, 42, "...") }}</span>
