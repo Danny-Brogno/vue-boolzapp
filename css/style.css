@@ -249,14 +249,14 @@ main {
   margin: 10px 0px 0px 0px;
 }
 
-#bubbleText span:first-of-type {
+#bubbleText span.received {
   background-color: white;
   align-self: flex-start;
   font-size: 20px;
   border-radius: 10px;
 }
 
-#bubbleText span:last-of-type {
+#bubbleText span.sent {
   background-color: #dbfac6;
   align-self: flex-end;
   font-size: 20px;

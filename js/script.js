@@ -37,7 +37,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 15:50:00',
-                    myText: 'Non mi pare una buona idea',
+                    text: 'Non mi pare una buona idea',
                     status: 'sent'
                 },
                 {
@@ -59,7 +59,7 @@ function vueFunction() {
                 },
                 {
                     date: '20/03/2020 16:30:55',
-                    myText: 'Antò, non fare scemenze',
+                    text: 'Antò, non fare scemenze',
                     status: 'sent'
                 },
                 {
@@ -81,7 +81,7 @@ function vueFunction() {
                 },
                 {
                     date: '28/03/2020 10:20:10',
-                    myText: "Anche dall'America?",
+                    text: "Anche dall'America?",
                     status: 'sent'
                 },
                 {
@@ -103,7 +103,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 15:50:00',
-                    myText: 'Io non ho sale per fare un uovo fritto e tu ti fai il bagno nel latte?',
+                    text: 'Io non ho sale per fare un uovo fritto e tu ti fai il bagno nel latte?',
                     status: 'sent'
                 },
                 {
@@ -113,7 +113,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 15:52:00',
-                    myText: 'Ma taci che non hai mai lavorato un minuto in vita tua',
+                    text: 'Ma taci che non hai mai lavorato un minuto in vita tua',
                     status: 'sent'
                 },
                 {
@@ -123,7 +123,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 15:54:00',
-                    myText: 'A quale università hai studiato per diventare influencer?',
+                    text: 'A quale università hai studiato per diventare influencer?',
                     status: 'sent'
                 },
                 {
@@ -133,7 +133,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 15:56:00',
-                    myText: 'Non puoi dire sul serio',
+                    text: 'Non puoi dire sul serio',
                     status: 'sent'
                 },
                 {
@@ -143,7 +143,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 15:58:00',
-                    myText: "Ok, mettiamola così: quale talento è necessario per poter fare l'influencer?",
+                    text: "Ok, mettiamola così: quale talento è necessario per poter fare l'influencer?",
                     status: 'sent'
                 },
                 {
@@ -153,7 +153,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 16:00:00',
-                    myText: 'Appunto',
+                    text: 'Appunto',
                     status: 'sent'
                 },
                 {
@@ -163,7 +163,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 16:02:00',
-                    myText: 'In confronto a te? Nessuno XD',
+                    text: 'In confronto a te? Nessuno XD',
                     status: 'sent'
                 },
                 {
@@ -173,7 +173,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 16:04:00',
-                    myText: 'Hai ragione, in fin dei conti io salvo vite... Poca roba',
+                    text: 'Hai ragione, in fin dei conti io salvo vite... Poca roba',
                     status: 'sent'
                 },
                 {
@@ -183,7 +183,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 16:06:00',
-                    myText: "Meglio di Batman",
+                    text: "Meglio di Batman",
                     status: 'sent'
                 },
                 {
@@ -193,7 +193,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 16:08:00',
-                    myText: 'No, è il nuovo Papa',
+                    text: 'No, è il nuovo Papa',
                     status: 'sent'
                 },
                 {
@@ -203,7 +203,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 16:10:00',
-                    myText: 'Vorrei poter pensare che tu abbia dei pensieri tuoi che non siano indotti da Instagram o Facebook',
+                    text: 'Vorrei poter pensare che tu abbia dei pensieri tuoi che non siano indotti da Instagram o Facebook',
                     status: 'sent'
                 },
                 {
@@ -213,7 +213,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 16:12:00',
-                    myText: 'Mettiamola così: se tu non fossi influencer quale altra professione faresti?',
+                    text: 'Mettiamola così: se tu non fossi influencer quale altra professione faresti?',
                     status: 'sent'
                 },
                 {
@@ -223,7 +223,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 16:14:00',
-                    myText: 'Ma se non hai mai letto un libro',
+                    text: 'Ma se non hai mai letto un libro',
                     status: 'sent'
                 },
                 {
@@ -247,7 +247,7 @@ function vueFunction() {
               },
               {
                   date: '11/11/2020 17:23:00',
-                  myText: 'Potere alle donne romane?',
+                  text: 'Potere alle donne romane?',
                   status: 'sent'
               },
               {
@@ -269,7 +269,7 @@ function vueFunction() {
                 },
                 {
                     date: '04/09/2020 10:11:10',
-                    myText: 'Gaio... Ti ho già detto che sono etero',
+                    text: 'Gaio... Ti ho già detto che sono etero',
                     status: 'sent'
                 },
                 {
@@ -291,7 +291,7 @@ function vueFunction() {
                 },
                 {
                     date: '07/08/2020 20:21:10',
-                    myText: 'Non parlo romano',
+                    text: 'Non parlo romano',
                     status: 'sent'
                 },
                 {
@@ -313,7 +313,7 @@ function vueFunction() {
                 },
                 {
                     date: '05/06/2020 23:58:10',
-                    myText: 'Forse perchè lo sei',
+                    text: 'Forse perchè lo sei',
                     status: 'sent'
                 },
                 {
@@ -335,7 +335,7 @@ function vueFunction() {
                 },
                 {
                     date: '23/04/2020 12:45:10',
-                    myText: 'Basta che vai a Cartagine',
+                    text: 'Basta che vai a Cartagine',
                     status: 'sent'
                 },
                 {
@@ -357,7 +357,7 @@ function vueFunction() {
                 },
                 {
                     date: '23/04/2020 12:45:10',
-                    myText: 'Non capisco la battuta',
+                    text: 'Non capisco la battuta',
                     status: 'sent'
                 },
                 {
@@ -379,7 +379,7 @@ function vueFunction() {
                 },
                 {
                     date: '23/04/2020 12:45:10',
-                    myText: 'Quanto ci vuole col battello?',
+                    text: 'Quanto ci vuole col battello?',
                     status: 'sent'
                 },
                 {
@@ -401,7 +401,7 @@ function vueFunction() {
                 },
                 {
                     date: '23/04/2020 12:45:10',
-                    myText: 'Potevi non scrivere affatto',
+                    text: 'Potevi non scrivere affatto',
                     status: 'sent'
                 },
                 {
@@ -434,7 +434,7 @@ function vueFunction() {
 
         this.objUser = {
           data: new Date(),
-          myText: this.addTextIntoArray,
+          text: this.addTextIntoArray,
           status: "sent",
         }
 

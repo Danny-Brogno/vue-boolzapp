@@ -126,8 +126,9 @@
             <ul class="width80">
 
               <li v-for="(elem, index) in currentMessages" id="bubbleText">
-                <span>{{ elem.text }}</span>
-                <span>{{ elem.myText }}</span>
+                <span v-bind:class="elem.status">{{ elem.text }}</span>
+                <!-- With colon class and elem.stautus [inside the v-for] and gets ALL the statuses like writing class="received/sent" -->
+                <!-- elem.status == .sent or .received -->
               </li>
 
             </ul>
