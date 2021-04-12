@@ -89,7 +89,7 @@
                 <img :src="elem.avatar">
                 <span>{{ elem.name }}</span>
                 <span>{{ elem.messages[elem.messages.length - 1].text}}</span>
-
+                <!-- v-if="elem.messages[elem.messages.length - 1].text.length > 20 ? elem.messages[elem.messages.length - 1].text = 'bla bla bla' : '' " -->
               </li>
             </ul>
           </div>
@@ -108,7 +108,7 @@
 
             <ul>
               <li class="selectedChatNameAndAvatar">
-                <img :src="currentChat.avatar">
+                <img v-if="currentChat.avatar" :src="currentChat.avatar">
                 <span>{{ currentChat.name }}</span>
               </li>
             </ul>

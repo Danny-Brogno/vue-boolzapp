@@ -21,7 +21,8 @@ function vueFunction() {
       "showImage": true,
       "currentMessages": "",
       "addTextIntoArray": "",
-      "sortedArray": "",
+      // "cutText": "",
+
       defaultMessage:{},
       objUser: {},
       contacts: [
@@ -228,7 +229,7 @@ function vueFunction() {
                 },
                 {
                     date: '10/01/2020 16:15:00',
-                    text: "Eh ma sarei un'attrice mica una lettrice",
+                    text: "Io sono un'attrice, mica una lettrice",
                     status: 'received'
                 },
 
@@ -420,6 +421,7 @@ function vueFunction() {
       movingContact: function (elem, index) {
         // MOVING CONTACT TOP RIGHT ON CLICK
         this.currentChat = elem,
+        // this.currentAvatar = elem.avatar,
         // MESSAGES APPEAR ON CLICK
         this.currentMessages = elem.messages,
         // HIDING DEFAULT IMAGE (MIDDLE SECTION) ON CLICK
@@ -448,8 +450,8 @@ function vueFunction() {
             // (THIS IS THE DEFAULT ANSWER)
             this.defaultMessage = {
               date: new Date(),
-              text: 'Va bene',
-              status: 'received'
+              text: "Va bene",
+              status: "received"
             }
             this.currentMessages.push(this.defaultMessage); // (PUSHED INTO THE ARRAY)
           }, 3000)
@@ -462,17 +464,26 @@ function vueFunction() {
           console.log("WRITE SOMETHING");
         }
 
-      }, // END OF sendMessage FUNCTION (IN METHODS)-----------------------------
+      } // END OF sendMessage FUNCTION (IN METHODS)-----------------------------
 
-    } // END OF METHODS--------------------------------------------------------
+      // cutText: function (text, length, suffix) {
+      //     if (text.length > length) {
+      //         return text.substring(0, length) + suffix;
+      //     } else {
+      //         return text;
+      //     }
+      // };
 
-    // computed: {
+    }, // END OF METHODS--------------------------------------------------------
+
+    // // computed: {
     //
 	  //   sortedArray: function() {
 		//     let sortedContacts = this.contacts;
     //
 		//     sortedContacts = sortedContacts.sort((a,b) => {
-		// 	    let fa = a.title.toLowerCase(), fb = b.title.toLowerCase();
+		// 	    let fa = a.names.toLowerCase();
+    //       let fb = b.names.toLowerCase();
 		// 	    if (fa < fb) {
 		// 		    return - 1;
 		// 	      } else if (fa > fb) {

@@ -154,11 +154,15 @@ main {
 }
 
 .lowerSectionLeft li {
-  width: 100%;
+  max-width: 100%;
   height: 15%;
   border: 1px solid grey;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.lowerSectionLeft li:hover {
+  background-color: lightgrey;
 }
 
 .contactSection li img {
