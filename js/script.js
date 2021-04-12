@@ -464,7 +464,7 @@ function vueFunction() {
           console.log("WRITE SOMETHING");
         }
 
-      } // END OF sendMessage FUNCTION (IN METHODS)-----------------------------
+      }, // END OF sendMessage FUNCTION (IN METHODS)-----------------------------
 
       // cutText: function (text, length, suffix) {
       //     if (text.length > length) {
@@ -475,26 +475,6 @@ function vueFunction() {
       // };
 
     }, // END OF METHODS--------------------------------------------------------
-
-    // // computed: {
-    //
-	  //   sortedArray: function() {
-		//     let sortedContacts = this.contacts;
-    //
-		//     sortedContacts = sortedContacts.sort((a,b) => {
-		// 	    let fa = a.names.toLowerCase();
-    //       let fb = b.names.toLowerCase();
-		// 	    if (fa < fb) {
-		// 		    return - 1;
-		// 	      } else if (fa > fb) {
-		// 		      return 1;
-		// 	      }
-		// 	      return 0;
-		//     })
-    //     console.log(sortedContacts);
-	  //   } // END OF sortedArray FUNCTION (IN COMPUTED)
-    //
-    // } // END OF COMPUTED--------------------------------------------------------
 
   }); // END OF vueFunction
 

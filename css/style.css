@@ -139,6 +139,7 @@ main {
   height: 35%;
   color: grey;
   border-radius: 5px;
+  font-size: 1.3rem;
 }
 
 /* ---------------------------LOWER LEFT SECTION----------------------------- */
@@ -162,7 +163,7 @@ main {
 }
 
 .lowerSectionLeft li:hover {
-  background-color: lightgrey;
+  background-color: #e9ebea;
 }
 
 .contactSection li img {
@@ -222,7 +223,10 @@ main {
 
 .disappearingImage {
   justify-content: center;
-  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .disappearingImage img{
@@ -283,6 +287,7 @@ main {
   width: 700px;
   height: 50px;
   border-radius: 20px;
+  font-size: 1.5rem;
 }
 
 
@@ -404,6 +409,7 @@ main {
   }
 
   /* ---------------FOOTER----------------- */
+
   .foot div:nth-child(3) input {
     width: 300px;
   }
