@@ -75,7 +75,7 @@
 
             <!-- THREE -->
             <div id="upLeft3" class="upperLeft flex">
-              <input v-model="searchContacts" type="text" placeholder=" &#128269; Look for a chat ">
+              <input v-model="searchContacts" type="text" placeholder=" &#128269; Look for a chat "><span></span>
             </div>
 
           </div>
@@ -89,8 +89,6 @@
                 <img :src="elem.avatar">
                 <span>{{ elem.name }}</span>
                 <span>{{ cutText(elem.messages[elem.messages.length - 1].text, 42, "...") }}</span>
-                <!-- v-if="elem.messages[elem.messages.length - 1].text.length > 20 ? elem.messages[elem.messages.length - 1].text = 'bla bla bla' : '' " -->
-              </li>
             </ul>
           </div>
 

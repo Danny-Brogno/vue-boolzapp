@@ -131,6 +131,7 @@ main {
 #upLeft3 {
   background-color: #e9ebea;
   justify-content: center;
+  position: relative;
 }
 
 #upLeft3 input {

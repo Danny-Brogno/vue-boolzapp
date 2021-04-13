@@ -17,8 +17,8 @@ function vueFunction() {
 
       "url": "img/legionario.png",
       "defaultImg": "img/default-background.png",
-      "currentChat": "",
       "showImage": true,
+      "currentChat": "",
       "currentMessages": "",
       "addTextIntoArray": "",
       "searchContacts": "",
@@ -236,8 +236,8 @@ function vueFunction() {
             ],
         },
         {
-          name: 'Agrippina',
-          avatar: 'img/agrippina.jpg',
+          name: 'Valeria',
+          avatar: 'img/valeria.jpg',
           visible: true,
           messages: [
               {
@@ -296,7 +296,17 @@ function vueFunction() {
                 },
                 {
                     date: '07/08/2020 20:22:22',
-                    text: "A' ragazzì, se tè piglio tè faccio dì l'ave Maria ar contrario più veloce de come o' dici ara diritta",
+                    text: "A' ragazzì, se tè piglio tè gonfio",
+                    status: 'received'
+                },
+                {
+                    date: '07/08/2020 20:23:10',
+                    text: 'Continuo a non capire il tuo linguaggio aulico',
+                    status: 'sent'
+                },
+                {
+                    date: '07/08/2020 20:24:22',
+                    text: "OMNIVM MALORVM STVLTITIA EST MATER",
                     status: 'received'
                 }
             ],
@@ -319,6 +329,16 @@ function vueFunction() {
                 {
                     date: '05/06/2020 23:59:22',
                     text: 'A si? bhe tu sei brutto e stupido',
+                    status: 'received'
+                },
+                {
+                    date: '06/06/2020 00:00:10',
+                    text: 'Sarà, ma almeno sono un cittadino romano.',
+                    status: 'sent'
+                },
+                {
+                    date: '06/06/2020 00:01:22',
+                    text: 'BASTA! Ne ho abbastanza! Io mi ribello',
                     status: 'received'
                 }
             ],
@@ -361,9 +381,24 @@ function vueFunction() {
                     status: 'sent'
                 },
                 {
-                    date: '23/04/2020 12:56:22',
+                    date: '23/04/2020 12:46:22',
                     text: 'TU non capisci noi CIOVANI',
                     status: 'received'
+                },
+                {
+                    date: '23/04/2020 12:47:10',
+                    text: 'Oi Mario, vedi che hai 50 anni...',
+                    status: 'sent'
+                },
+                {
+                    date: '23/04/2020 12:48:22',
+                    text: "Sono giovane nell'anima",
+                    status: 'received'
+                },
+                {
+                    date: '23/04/2020 12:47:10',
+                    text: 'Un giovane prossimo al pensionamento',
+                    status: 'sent'
                 }
             ],
         },
@@ -383,8 +418,18 @@ function vueFunction() {
                     status: 'sent'
                 },
                 {
-                    date: '23/04/2020 12:56:22',
+                    date: '23/04/2020 12:46:22',
                     text: 'Un paio di mesi',
+                    status: 'received'
+                },
+                {
+                    date: '23/04/2020 12:47:10',
+                    text: 'bhe, non male in fin dei conti. E quale battello userai?',
+                    status: 'sent'
+                },
+                {
+                    date: '23/04/2020 12:48:22',
+                    text: 'Costa Concordia',
                     status: 'received'
                 }
             ],
@@ -405,8 +450,18 @@ function vueFunction() {
                     status: 'sent'
                 },
                 {
-                    date: '23/04/2020 12:56:22',
-                    text: 'Ma anche no',
+                    date: '23/04/2020 12:46:22',
+                    text: 'Mi sento molto solo',
+                    status: 'received'
+                },
+                {
+                    date: '23/04/2020 12:47:10',
+                    text: 'Trovati una fidanzata',
+                    status: 'sent'
+                },
+                {
+                    date: '23/04/2020 12:48:22',
+                    text: 'Ti ho scritto per questo',
                     status: 'received'
                 }
             ],
@@ -420,7 +475,6 @@ function vueFunction() {
       movingContact: function (elem, index) {
         // MOVING CONTACT TOP RIGHT ON CLICK
         this.currentChat = elem,
-        // this.currentAvatar = elem.avatar,
         // MESSAGES APPEAR ON CLICK
         this.currentMessages = elem.messages,
         // HIDING DEFAULT IMAGE (MIDDLE SECTION) ON CLICK
@@ -446,7 +500,7 @@ function vueFunction() {
 
           // AND WE HAVE A DEFALUT ANSWER THAT COMES AFTER 3 SECONDS
 
-          const savedIndex = this.currentMessages;
+          const savedIndex = this.currentMessages; // this CONST is to not make the message appear in another chat if we quickly send a message and go to another chat: saving the "index" into a const so it is not effected by the setTimeout and the message arrives to the right person.(saveIndex appears a couple of lines after the setTimeout as well)
           this.defaultMessage = setTimeout(() => { // (THIS IS THE DEFAULT ANSWER)
             this.defaultMessage = {
               "date": new Date(),
@@ -454,7 +508,7 @@ function vueFunction() {
               "status": "received"
             }
             savedIndex.push(this.defaultMessage); // (PUSHED INTO THE ARRAY)
-          }, 3000)
+          }, 3000) // after 3 seconds
 
           // THIS MAKES THE TEXT GO AWAY ONCE YOU "SEND" IT IN THE ARRAY
           this.addTextIntoArray = "";
@@ -483,14 +537,14 @@ function vueFunction() {
 
     computed: {
       filteredContacts: function() {
-        return this.contacts.filter((element) => {
-          if (element.name.toLowerCase().includes(this.searchContacts.toLowerCase())) {
-            return element;
+        return this.contacts.filter((element) => { // the filter function cycles into the array
+          if (element.name.toLowerCase().includes(this.searchContacts.toLowerCase())) { // and checks that the elements name (toLowerCase transforms all strings to lower case so we don't have an issue if we type a capital) and if this is included in the input (thai is also a variable)
+            return element; // then it returns the filtered element
           }
         });
       }
 
-    } // END OF COMPUTED (RESTITUISCONO SEMPRE UN VALORE)
+    } // END OF COMPUTED ("computed" always returns something)
 
   }) // END OF vueFunction
 
