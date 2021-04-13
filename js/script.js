@@ -443,16 +443,17 @@ function vueFunction() {
 
           // THEN IT CAN GO INTO THE ARRAY (LINE 427 OF JS)
           this.currentMessages.push(this.objUser);
+
           // AND WE HAVE A DEFALUT ANSWER THAT COMES AFTER 3 SECONDS
 
-          this.defaultMessage = setTimeout(() => {
-            // (THIS IS THE DEFAULT ANSWER)
+          const savedIndex = this.currentMessages;
+          this.defaultMessage = setTimeout(() => { // (THIS IS THE DEFAULT ANSWER)
             this.defaultMessage = {
               "date": new Date(),
               "text": "Va bene",
               "status": "received"
             }
-            this.currentMessages.push(this.defaultMessage); // (PUSHED INTO THE ARRAY)
+            savedIndex.push(this.defaultMessage); // (PUSHED INTO THE ARRAY)
           }, 3000)
 
           // THIS MAKES THE TEXT GO AWAY ONCE YOU "SEND" IT IN THE ARRAY
