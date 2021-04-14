@@ -295,7 +295,7 @@ main {
 }
 
 
-/* ------------------------------MEDIA QUERY--------------------------------- */
+/* ------------------------------MEDIA QUERY WIDTH--------------------------------- */
 
 /* ----------------------------EXTRA SMALL----------------------------------- */
 @media all and (max-width:552px) {
@@ -428,4 +428,77 @@ main {
     margin-left: 0;
   }
 
+}
+
+
+
+
+
+
+
+/* --------------------MEDIA QUERY HEIGHT------------------------------------ */
+
+/* -------------------------EXTRA SMALL------------------------------------- */
+@media all and (min-height: 100px) and (max-height: 413px) {
+
+  /*--------- DOWN LEFT SECTION---------- */
+  .each-li {
+    display: none;
+  }
+
+}
+
+
+
+/* -------------------------------SMALL------------------------------------- */
+@media all and (min-height: 414px) and (max-height: 534px) {
+
+  /*--------- DOWN LEFT SECTION---------- */
+  .contactSection li img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .each-li span:first-of-type {
+    display: none;
+  }
+
+}
+
+
+
+/* -------------------------------MEDIUM------------------------------------- */
+@media all and (min-height: 535px) and (max-height: 689px) {
+
+  /*--------- DOWN LEFT SECTION------------- */
+  .contactSection li img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .each-li span:first-of-type {
+    display: none;
+  }
+
+}
+
+
+
+/* -------------------------------LARGE-------------------------------- */
+
+@media all and (max-height:690px) {
+
+  /* ----------DOWN LEFT SECTION--------- */
+  .each-li span:last-of-type {
+    display: none;
+  }
+
+  .contactSection li img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .each-li span:first-of-type {
+    font-size: 20px;
+  }
 }

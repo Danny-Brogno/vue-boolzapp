@@ -474,11 +474,11 @@ function vueFunction() {
 
       movingContact: function (elem, index) {
         // MOVING CONTACT TOP RIGHT ON CLICK
-        this.currentChat = elem,
+        this.currentChat = elem;
         // MESSAGES APPEAR ON CLICK
-        this.currentMessages = elem.messages,
+        this.currentMessages = elem.messages;
         // HIDING DEFAULT IMAGE (MIDDLE SECTION) ON CLICK
-        this.showImage = !this.defaultImg
+        this.showImage = false;
         // ADDING TEXT FROM INPUT TO ARRAY (PRINTED IN PAGE)
 
       }, // END OF MOVING CONTACTS FUNCTION (IN METHODS)------------------------
@@ -487,9 +487,9 @@ function vueFunction() {
       sendMessage: function() {
 
         this.objUser = {
-          data: new Date(),
-          text: this.addTextIntoArray,
-          status: "sent",
+          "data": new Date(),
+          "text": this.addTextIntoArray,
+          "status": "sent",
         }
 
         // IF USER TRIES TO SEND EVEN ONE SINGLE LETTER
