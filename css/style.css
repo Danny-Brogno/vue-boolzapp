@@ -71,13 +71,13 @@ main {
 /* (1) */
 .upperSectionLeft {
   height: 300px;
+  flex-wrap: wrap;
 }
 
 .upperLeft {
   height: 33.5%;
   width: 100%;
   align-items: center;
-  justify-content: flex-end;
   border-bottom: 1px solid grey;
   border-right: 1px solid grey;
 }
@@ -86,8 +86,7 @@ main {
   width: 4rem;
   height: 4rem;
   border-radius: 100%;
-  position: relative;
-  right: 225px;
+  margin-left: 10px;
 }
 
 .upperLeft i {
@@ -101,30 +100,31 @@ main {
 
 /* -------------------------------------------------------------------------- */
 /* (2) */
+
+#upLeft2 {
+  width: 100%;
+  background-color: #8bd6fd;
+}
+
 #upLeft2 i {
   background-color: white;
   padding: 15px 15px;
   border-radius: 100%;
-  position: relative;
-  right: 85px;
 }
 
-#upLeft2:nth-child(2) h4 {
+#upLeft2 .fa-bell-slash {
+  margin-left: 10px;
+}
+
+#upLeft2:nth-child(2) a h4 {
   font-weight: bold;
-  position: relative;
-  right: 50px;
 }
 
-#upLeft2:nth-child(2) p {
+#upLeft2:nth-child(2) a p {
   color: grey;
   text-decoration: underline;
-  position: relative;
-  right: 50px;
 }
 
-#upLeft2 {
-  background-color: #8bd6fd;
-}
 
 /* -------------------------------------------------------------------------- */
 /* (3) */
@@ -301,6 +301,12 @@ main {
 @media all and (max-width:552px) {
 
   /* ------------UPPER LEFT--------------- */
+
+  .upperLeft img {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
   #upLeft2:nth-child(2) h4,
   #upLeft2:nth-child(2) p {
     font-size: 6px;
@@ -328,7 +334,8 @@ main {
 
   /* ------------UPPER LEFT--------------- */
   .upperLeft img {
-    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   #upLeft2:nth-child(2) h4,
@@ -359,11 +366,6 @@ main {
   .upperLeft img {
     width: 3rem;
     height: 3rem;
-    right: 0px;
-  }
-
-  #upLeft2 i {
-    display: none;
   }
 
   #upLeft2:nth-child(2) h4,
@@ -398,13 +400,6 @@ main {
 @media all and (min-width:879px) and (max-width: 1828px) {
 
   /* ------------UPPER LEFT--------------- */
-  .upperLeft img {
-    left: 5px;
-  }
-
-  #upLeft2 i {
-    right: 65px;
-  }
 
   #upLeft2:nth-child(2) h4,
   #upLeft2:nth-child(2) p {
